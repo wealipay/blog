@@ -1,20 +1,22 @@
 {
   "version": 2,
-  "github": {
-    "silent": true
-  },
-  "build": {
-    "env": {
-      "NODE_VERSION": "18.x"
-    }
-  },
   "builds": [
     {
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "public",
-        "cleanUrls": true
+        "cleanUrls": true,
+        "includeFiles": ["public/**"]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=0, must-revalidate"
       }
     }
   ]
