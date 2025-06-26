@@ -5,19 +5,14 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "public",
-        "cleanUrls": true,
-        "includeFiles": ["public/**"]
+        "distDir": "public"
       }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/$1",
-      "headers": {
-        "Cache-Control": "public, max-age=0, must-revalidate"
-      }
+      "dest": "/$1"
     }
   ]
 }
