@@ -1,12 +1,12 @@
 # 配置里面 线上地址写法：http://xxx，本地地址。可以在`source`文件夹下创建目录，假如创建img和videos目录，则引用的时候使用 /img/xxx 写法, /videos/xxx  ... 
 
 # 菜单
- menu:
-   Home:
-     url: /
-     icon: fas fa-home
-   Archives:
-     url: /archives
+# menu:
+#   Home:
+#     url: /
+#     icon: fas fa-home
+#   Archives:
+#     url: /archives
 #     icon: fas fa-archive
 #   Tags:
 #     url: /tags
