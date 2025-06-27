@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
+title: Wealipay网络教程
+subtitle: '记录所学，方便巩固！'
+description: '折腾一些好玩的东西'
+keywords: 'wealipay'
+author: wealipay
+language: zh-CN
 timezone: ''
 
 # URL
