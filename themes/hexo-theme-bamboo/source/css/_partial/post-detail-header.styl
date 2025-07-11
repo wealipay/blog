@@ -6,23 +6,22 @@
   
   position: relative;
   background-color: $color-primary;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   color: #fff;
   font-weight: lighter;
   font-family: Consolas, 'Courier New';
 
-  
   // css动画效果，需要的话就加上
-  // animation: header-effect 1s;
-  // animation-duration: 1s;
-  // animation-timing-function: ease;
-  // animation-delay: 0s;
-  // animation-iteration-count: 1;
-  // animation-direction: normal;
-  // animation-fill-mode: none;
-  // animation-play-state: running;
-  // animation-name: header-effect;
+  animation: header-effect 1s;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+   animation-delay: 0s;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-fill-mode: none;
+   animation-play-state: running;
+   animation-name: header-effect;
 
   @keyframes header-effect {
     0% {
@@ -41,14 +40,15 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #000;
-    opacity: 0.4;
+    background:linear-gradient(to right,#476999 ,#fe2e48);
+    opacity: 0.9;
     transition: all 0.2s;
   }
 
   .title-box {
     display: block;
     z-index: 2;
+
   }
   
   .title {
@@ -105,7 +105,7 @@
 
 @media (max-width: 551px) {
   .post-detail-header {
-    height: 360px;
+    height: 300px;
     text-align: left;
     line-height: 2;
 

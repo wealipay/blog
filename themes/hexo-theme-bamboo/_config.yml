@@ -1,41 +1,52 @@
 # 配置里面 线上地址写法：http://xxx，本地地址。可以在`source`文件夹下创建目录，假如创建img和videos目录，则引用的时候使用 /img/xxx 写法, /videos/xxx  ... 
 
 # 菜单
-# menu:
-#   Home:
-#     url: /
-#     icon: fas fa-home
-#   Archives:
-#     url: /archives
-#     icon: fas fa-archive
-#   Tags:
-#     url: /tags
-#     icon: fas fa-tags
-#   Categories:
-#     url: /categories
-#     icon: fas fa-bookmark
-#   Friends:
-#     url: /friends
-#   更多: # 这是二级菜单的写法
-#    icon: fas fa-link
-#    children:
-#     - name: 图库
-#       url: /gallery
-#       icon: fas fa-music
-#     - name: 友情连接
-#       url: /huoban
-#       icon: fas fa-film
-#     - name: 关于我
-#       url: /me
-#       icon: fas fa-film
-#     - name: 百度
-#       url: http://baidu.com
-#       icon: fas fa-film
+menu:
+   Home:
+     url: /
+     icon: fas fa-home
+   搜索码领红包: # 这是二级菜单的写法
+    icon: fas fa-link
+    children:
+     - name: 7月领红包
+       url: https://wealipay.top/posts/202507.html
+       icon: fas fa-sack-dollar
+     - name: 6月领红包
+       url: https://wealipay.top/posts/202506.html
+       icon: fas fa-sack-dollar
+     - name: 5月领红包
+       url: https://wealipay.top/posts/202505.html
+       icon: fas fa-sack-dollar
+     - name: 4月领红包
+       url: https://wealipay.top/posts/202504.html
+       icon: fas fa-sack-dollar
+     - name: 3月领红包
+       url: https://wealipay.top/posts/202503.html
+       icon: fas fa-sack-dollar
+     - name: 2月领红包
+       url: https://wealipay.top/posts/202502.html
+       icon: fas fa-sack-dollar
+     - name: 1月领红包
+       url: https://wealipay.top/posts/202501.html
+       icon: fas fa-sack-dollar
 
+   Archives:
+     url: /archives
+     icon: fas fa-archive
+   Tags:
+     url: /tags
+     icon: fas fa-tags
+   Categories:
+     url: /categories
+     icon: fas fa-bookmark
+   Friends:
+     url: /friends
+     
 # github地址, 头部导航右上角的github链接
 Github: 
-  on: true
+  on: false
   url: https://github.com/yuang01/hexo-theme-bamboo
+
 
 # 网站logo
 logo: /medias/logo.png # 为空则不显示
@@ -49,28 +60,28 @@ sidebar:
   widget_library:
     side_blogger:
       on: true
-      avatar: https://pic2.zhimg.com/80/v2-42b72d5ebee4b8d8aa70d9687effe87b_1440w.webp
+      avatar: /medias/logo.png
       shape: rectangle # circle, rectangle
       url: /about/
-      title: Wealipay
-      subtitle: 网络教程
-      jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
+      title: 一起薅羊毛
+      subtitle: 打开支付宝搜索853688884即可领红包,互帮互助才能互利共赢
+#      jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
       fontFammily: Titillium Web,'PingFang SC','Hiragino Sans GB','Microsoft JhengHei','Microsoft YaHei',sans-serif
-      background: '#fff'
+      background: 'linear-gradient(to right,white,#fe2e48);'
       order:  # 卡片排序, 数值越小，越在上面
       social:
-        - icon: fas fa-rss
-          url: /atom.xml
-        - icon: fas fa-envelope
-          url: mailto:me@xxx.com
-        - icon: fab fa-github
-          url: https://github.com/yuang01/hexo-theme-bamboo
-        - icon: fab fa-qq
-          url: tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=你的qq号码
+        - icon: fas fa-wechat
+          url: /
+ #       - icon: fas fa-envelope
+#          url: mailto:me@xxx.com
+ #       - icon: fab fa-github
+ #         url: https://github.com/yuang01/hexo-theme-bamboo
+ #       - icon: fab fa-qq
+ #         url: tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=你的qq号码
     # ---------------------------------------
     side_toc:
       on: true
-      background: '#fff'
+      background: 'linear-gradient(to right,white,#fe2e48);'
       order: -1 # 卡片排序(widget都有)，任意数字，数字小的在上面
       header:
         icon: fas fa-list
@@ -83,7 +94,7 @@ sidebar:
     # category widget
     side_category:
       on: true
-      background: '#fff'
+      background: 'linear-gradient(to right,white,#fe2e48);'
       order:  # 卡片排序(widget都有)，任意数字，数字小的在上面
       header:
         icon: fas fa-folder-open
@@ -94,7 +105,7 @@ sidebar:
     # tagcloud widget
     side_tagcloud:
       on: true
-      background: '#fff'
+      background: 'linear-gradient(to right,white,#fe2e48);'
       order: 
       header:
         icon: fas fa-tags
@@ -110,7 +121,7 @@ sidebar:
     # recent_post widget
     side_recent_post:
       on: true
-      background: '#fff'
+      background: 'linear-gradient(to right,white,#fe2e48);'
       limit: 5
       sort: update # date
       order: 
@@ -128,7 +139,7 @@ sidebar:
       timeOrder: -1 # Sort of order. 1, asc for ascending; -1, desc for descending 时间排序
       limit: 8 # if set 0 will show all
       order:  # widget order 卡片排序
-      background: '#fff'
+      background: 'linear-gradient(to right,white,#fe2e48);'
       header: 
         icon: fas fa-archive
         icon_color: red
@@ -136,7 +147,7 @@ sidebar:
     # ---------------------------------------
     # side_webinfo widget
     side_webinfo:
-      background: '#fff'
+      background: 'linear-gradient(to right,white,#fe2e48);'
       order: 
       header: 
         icon: fas fa-chart-line
@@ -148,7 +159,7 @@ sidebar:
           unit: '篇'
         runtime:
           on: true
-          data: '2020/01/01'    # 填写建站日期
+          data: '2025/06/28'    # 填写建站日期
           text: '已运行时间：'
           unit: '天'
         wordcount:
@@ -190,26 +201,26 @@ swiper:
   textDuration: '0.2s' # 文字动画持续时间（单位秒）
   textDelay: '0.1s' # 文字动画延迟时间（单位秒）
   readMoreBtn: true # 阅读更多按钮是否显示
-  readMoreBtnBackgroundColor: '' # 阅读更多按钮背景颜色,空字符串则默认使用主题颜色
+  readMoreBtnBackgroundColor: '#73AdFF' # 阅读更多按钮背景颜色,空字符串则默认使用主题颜色
   bubble: true # 轮播图是否显示气泡,也可以打开底下的花瓣或者雪花特效 sakura（花瓣）: true snow(雪花): true
   wave: true # 轮播图底下的波浪特效
   # 当没有文章设置swiper: true时候，轮播图会显示以下default默认内容，可自行切换对应内容
-  defaultImg: 'https://pic1.zhimg.com/v2-af3ccef61cf58b1a70765747cc1bbeac_b.jpg' # 图片，没有则随机选取
+  defaultImg: '/medias/default.jpg' # 图片，没有则随机选取
   defaultVideo: '' # video，min-width:992px show
   defaultVideoLoadingImg: 'https://img14.360buyimg.com/ddimg/jfs/t1/175057/18/19582/882056/60ee7ac8Ef0045710/202d2ad878684a3b.gif' # video loading img -- use .gif img, 视频预加载动画，使用gif图片作为loading，为空则视频没有预加载动画
-  defaultTile: '青墨书晚风' # 标题
-  defaultDesc: [] #描 述，例如 ['煮酒洗净尘嚣，论知交', '万般付之一笑，共偕老']
-  defaultLeftBtnText: '阅读文档' # 左边按钮文字, 空字符串则不显示
-  defaultLeftBtnLink: 'https://yuang01.gitee.io/2021/02/08/hexo-theme-bamboo-new/' # 左边按钮链接 
-  defaultRightBtnText: '下载主题' # 右边按钮的文字，空字符串则不显示
-  defaultRightBtnLink: 'https://gitee.com/yuang01/hexo-theme-bamboo/repository/archive/dev.zip' # 右边的按钮的链接
+  defaultTile: '一起薅羊毛' # 标题
+  defaultDesc: [打开支付宝，搜索853688884即可领红包] #描 述，例如 ['煮酒洗净尘嚣，论知交', '万般付之一笑，共偕老']
+  defaultLeftBtnText: '互帮互助' # 左边按钮文字, 空字符串则不显示
+  defaultLeftBtnLink: '' # 左边按钮链接 
+  defaultRightBtnText: '互利共赢' # 右边按钮的文字，空字符串则不显示
+  defaultRightBtnLink: '' # 右边的按钮的链接
   defaultDescTyped: true # defaultDesc文字是否开启打字特效  is typed
   defaultDescTypedSpeed: 100 # defaultDesc 打字速度, typed typeSpeed
   defaultDescTypedBackSpeed: 50 # defaultDesc 打字返回速度 typed backSpeed
   defaultDescTypedLoop: true # defaultDesc文字的打字特效是否循环  typed loop
   # defaultAddToSwiper表示：当有文章设置了swiper: true的时候，将上面的 默认内容 放在轮播图的第一页
   defaultAddToSwiper: true # 开启这个，则loop默认为false
-  bothSideBlur: '300000px' # 轮播图两边模糊程度，px越大越模糊，针对下面的imgwidthFull、full为false的时候
+  bothSideBlur: '30000px' # 轮播图两边模糊程度，px越大越模糊，针对下面的imgwidthFull、full为false的时候
   ## 轮播图样式更改
   # 轮播图的文字和按钮居中显示 (针对 imgwidthFull和 full都是false的时候)
   textCenter: false
@@ -218,7 +229,7 @@ swiper:
   # 整个轮播图宽高都是100%  (轮播图的文字和按钮只能居中显示)
   full: true # full 优先级大于 imgwidthFull
   # 两边透明，imgwidthFull/full: false的时候，设置该值为true，则两边的模糊效果为透明
-  bothSideTransparent: false
+  bothSideTransparent: true
 
 # 回到顶部
 goTop: 
@@ -249,7 +260,7 @@ WeChatpay: 'https://pic2.zhimg.com/80/v2-29e78b52051ce542adf6d786d61fbd19_1440w.
 # 分享功能
 sharejs: 
   on: true
-  sites: twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin
+  sites: wechat,qq,qzone,weibo,douban
 
 # 鼠标点击特效
 cursor_effect:
@@ -258,7 +269,7 @@ cursor_effect:
 
 # 头部导航是否显示天气
 weather:
-  on: false
+  on: true
 
 # 全文搜索功能
 search:
@@ -284,8 +295,8 @@ ribbon:
 
 # live-2d(左下角动画人物)
 live2d:
-  on: false # 控制显示或者隐藏
-  modelId:  # 0 or 1 or 2 or 3 or 4 or 5 or 6
+  on: true # 控制显示或者隐藏
+  modelId: 0 # 0 or 1 or 2 or 3 or 4 or 5 or 6
   open: true # 默认展开，false则收缩，通过点左下角的方块点击，控制展开或者收缩
 
 # 首页雪花飘落效果--冬天
@@ -358,25 +369,25 @@ copyright:
 # 首页座右铭
 motto:
   on: true
-  title: '座右铭'
-  content: '沉淀后我愿意做个温暖的人，有自己的喜好，有自己的原则，有自己的信仰，不急功近利，不浮夸轻薄。宠辱不惊，淡定安逸，心静如水，不忘初心，方得始终。——凌茜'
-  background: 'url("https://img10.360buyimg.com/ddimg/jfs/t1/166587/8/21344/72069/6088c24fEda5fdeb6/f9730ab637b7ca47.png")' # url("xxx") or red or #000 or rgba() ..
+  title: '一起薅羊毛'
+  content: '经常分享支付宝薅羊毛的活动，包括扫码领红包，淘宝618，淘宝双11等活动，互帮互助，才能互利共赢！_https://wealipay.top'
+  background: 'radial-gradient(10% 50% at left top,#fe2e48,transparent),radial-gradient(10% 50% at left bottom,#fe2e48,transparent),linear-gradient(to right,white,#fe2e48);' # url("xxx") or red or #000 or rgba() ..
 
 # 首页公告
 notice:
   on: true
   seamless: false # 为true时，则无缝不停止滚动，false是会停一下的滚动
-  title: '公告'
-  background: 'url("https://img10.360buyimg.com/ddimg/jfs/t1/166587/8/21344/72069/6088c24fEda5fdeb6/f9730ab637b7ca47.png")' # url("xxx") or red or #000 or rgba() ..
+  title: '最新通知'
+  background: 'linear-gradient(to right,white,#fe2e48);' # url("xxx") or red or #000 or rgba() ..
   list: # list相当于数组对象，[{title:'xx',date: 'xx', url: 'xxx', color: 'red'}]根据自己实际情况，增加或者删除
-    # - title: '#博客更新到2.0了'
-    #   date: '2021-04-28'
-    #   url: '/archives'   # 可以为空, 也可以是本地页面地址如 '/archives'
-    #   color: red   # 字体颜色
-    # - title: '#新增 轮播图支持三种模式了，功能也增强了 ~'
-    #   date: '2021-04-28'
+     - title: '博客更新到2.0了'
+       date: '2021-04-28'
+       url: '/archives'   # 可以为空, 也可以是本地页面地址如 '/archives'
+       color: #42b983   # 字体颜色
+     - title: '一起薅羊毛网站正式上线'
+       date: '2025-06-28'
     #   url: 'http://baidu.com'
-    #   color: red
+       color: #42b983
     # - title: '#新增 支持二级导航'
     #   date: '2021-04-28'
     #   url: 'http://baidu.com'
@@ -397,12 +408,12 @@ notice:
 # 文章置顶
 topArticle:
   on: true
-  background: 'rgba(255,255,255,1)' # url("http://xxx.png") or red or #000 or rgba() ..
+  background: 'linear-gradient(to right,white,#fe2e48);' # url("http://xxx.png") or red or #000 or rgba() ..
 
 # 归档，标签，分类页图片上的打字效果
 typed:
   on: true
-  loop: false # 是否循环
+  loop: true # 是否循环
   showCursor: false # 是否显示光标
   startDelay: 100 # 开始延迟
   typeSpeed: 100 # 打字速度
@@ -537,7 +548,7 @@ archive:
   desc: '愿你如风，被人温柔以待'
   full: true # 设置为true，则图片全屏显示
   video: '' # 如果有值，则在屏幕大于920px的时候，全屏显示视频，为空则显示图片(img)
-  background: '' # red or rgba(255,255,255,0.8) or other color or url("http:xxx.png")
+  background: 'linear-gradient(to right,white,#fe2e48);' # red or rgba(255,255,255,0.8) or other color or url("http:xxx.png")
   yearColor: '' # 年份字体颜色
   monthColor: '' # 月份字体颜色
   titleColor: '' # 标题字体颜色
@@ -549,7 +560,7 @@ tag:
   desc: '愿你如风，被人温柔以待'
   full: false # 标签页上面的图片是否全屏显示
   video: '' # 如果有值，则在屏幕大于920px的时候，全屏显示视频
-  background: '' # red or rgba(255,255,255,0.8) or other color or url("http:xxx.png")
+  background: 'linear-gradient(to right,white,#fe2e48);' # red or rgba(255,255,255,0.8) or other color or url("http:xxx.png")
   titleColor: '' # 标题字体颜色
 
 # 标签详情页面，配置同上
@@ -559,7 +570,7 @@ tagDetail:
   desc: '愿你如风，被人温柔以待' # 标签页详情上上面的图片上的文字
   full: false
   video: ''
-  background: '' # red or rgba(255,255,255,0.8) or other color or url("http:xxx.png")
+  background: 'linear-gradient(to right,white,#fe2e48);' # red or rgba(255,255,255,0.8) or other color or url("http:xxx.png")
 
 # 分类页面，配置同上
 categories:
@@ -568,7 +579,7 @@ categories:
   desc: '愿你如风，被人温柔以待'
   full: false
   video: ''
-  background: '' # red or rgba(255,255,255,0.8) or other color or url("http:xxx.png")
+  background: 'linear-gradient(to right,white,#fe2e48);' # red or rgba(255,255,255,0.8) or other color or url("http:xxx.png")
   titleColor: '' # 标题字体颜色
 
 #分类详情页面，配置同上
@@ -578,7 +589,7 @@ categoryDetail:
   desc: '愿你如风，被人温柔以待'
   full: false
   video: ''
-  background: '' # red or rgba(255,255,255,0.8) or other color or url("http:xxx.png")
+  background: 'linear-gradient(to right,white,#fe2e48);' # red or rgba(255,255,255,0.8) or other color or url("http:xxx.png")
 
 # 黑夜模式, 关灯
 dark:
@@ -597,10 +608,10 @@ color_scheme:
     # 链接色 a标签
     link: '#42b983'
     # 首页文章列表的背景颜色, url("http://xxx.png") or red or #000 or rgba() ..
-    postListBackground: 'rgba(255,255,255,1)'
+    postListBackground: 'linear-gradient(to right,white,#fe2e48);'
     # 首页页面的底部背景颜色，空字符串透明('transparent')，可以是白色('#fff')等颜色, 也可以是图片，例如  'url("https://img11.360buyimg.com/ddimg/jfs/t1/169624/29/16/4603017/5fec2c79Eecbd536a/308b28b82a013cd2.png")'
     bgFloor: 'url("https://pic2.zhimg.com/80/v2-a90e3e9f544549e244355039b96bd606_1440w.jpg")' # 如果是图片地址，url里面请用双引号
-    headerMenuBackgroundColor: '' 
+    headerMenuBackgroundColor: 'linear-gradient(#476999 10%, #cfeaf5 90%)' 
     # headerMenuBackgroundColor:头部导航背景颜色, 为空则使用theme主题色, 
     # headerMenuBackgroundColor写法: rgba(268, 264, 269, 0.8) or #42b983 or red or 也可以是渐变颜色 linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)  or 也可以是url("图片地址")
   # 文章详情页 颜色属性
@@ -614,7 +625,8 @@ color_scheme:
     # 如果背景只想要一个图片：可以使用 ['http://xxxxxx'] 或者 'http://xxxxxxx'，这样的写法, 图片地址也可以是本地路径('/img/xxx.png' or '/medias/xxx.png')
     # 也可以是颜色字符串（例如'#C7EDCC', 或者rgba(0 ,0 ,0, 0.8) 那么会使用该颜色作为背景）
     # 空字符串则背景颜色为透明
-    bgImg: ''
+    bgImg: 'medias/article/articleImg.jpg'
+
     # 背景图幻灯片模式--延迟时间
     # 如果bgImg设置为数组，数组里面是多个图片地址,则 bgImgDelay表示背景图幻灯片的 延迟间隔时间
     bgImgDelay: 180000 # 默认三分钟，切换一张图片
@@ -624,11 +636,11 @@ color_scheme:
     ## 单独的文章里配置，则这bgImg，bgImgDelay，bgImgTransition三个属性优先使用单独的文章里配置的
   footer:
     # 为空则使用 theme主题色，写法: rgba(268, 264, 269, 0.8) or #42b983 or red or 也可以是渐变颜色 linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%) or 也可以是url("图片地址")
-    background: '' 
+    background: 'linear-gradient( #cfeaf5 20%,#476999);' 
     # 页脚里面的a标签鼠标移入时候的颜色 red or #000 or other color
     aHover: 'orangered' 
     # fish --> 表示页脚游动的鱼儿特效, 鱼儿颜色值使用的是footer.background, 只支持rgba(66, 185, 133, 0.8) 或者 #42b983 或者 red 这三种颜色格式的写法，是格式。
-    fish: true 
+    fish: false 
 
 # 设置网站页脚
 site_footer:
@@ -644,7 +656,7 @@ site_footer:
     #   url: https://github.com/yuang01/hexo-theme-bamboo
     # - icon: fas fa-qq
     #   url: tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541
-  copyright: 'Copyright © 2019 - 2020 <a href="https://github.com/yuang01">yuang01</a> | Powered by <a href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a href="https://github.com/yuang01/theme">Bamboo</a> '
+  copyright: 'Copyright © 2025<a href="https://wealipay.top">Wealipay</a>'
   custom: # 根据需要自行取消注释，label: 'markdown格式'，会在下面继续增加内容
     # - label: '<br>'
     # - label: '[Hello World](http://baidu.com)'
@@ -728,7 +740,7 @@ highlight:
 
 # wordcount字数统计, 需要 npm i hexo-wordcount 安装
 wordcount:
-  on: false
+  on: true
 
 # 自己嵌入css或者script
 import:
@@ -737,9 +749,7 @@ import:
     - 
     - 
   script: 
-    # - <script src="xxx.js"></script>
-    - 
-    - 
+ 
 
 # 文章图片,不指定 img:xxx 的时候随机取下面的图片
 imgs:
@@ -783,3 +793,4 @@ CDN:
   tocbotCss: https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.css
   jquery: https://unpkg.com/jquery@3.5.1/dist/jquery.min.js
   vue: https://unpkg.com/vue@2.6.11/dist/vue.min.js
+

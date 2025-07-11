@@ -1,0 +1,65 @@
+
+# home_widget里面的内容会出现在座右铭那一个栏目里面
+home_widget:
+  - class_name: mybilibili
+    id_name: mybilibili
+    order: -1
+    name: 好消息好消息
+    icon: fas fa-envelope
+    icon_color: red
+    url: http://baidu.com
+    background: 'linear-gradient(to right,white,#fe2e48);'
+    html: '
+      <div id="myBli">
+        <vue-seamless-scroll
+          :data="listData"
+          :class-option="classOption"
+          class="warp"
+        >
+          <ul class="ul-item" style="width:720px;">
+            <!-- 在这里改, 手动修改a连接的href值和img的src值, 如果你会进阶，你可以使用v-for, 或者数据使用动态数据-->
+            
+            <li class="li-item">
+              <a href="http://baidu.com">
+                <img class="no-lazy" src="/medias/bli1.jpg">
+              </a>
+            </li>
+
+            <li class="li-item">
+              <a href="http://baidu.com">
+                <img class="no-lazy" src="/medias/bli2.jpg">
+              </a>
+            </li>
+
+            <li class="li-item">
+              <a href="http://baidu.com">
+                <img class="no-lazy" src="/medias/bli3.jpg">
+              </a>
+            </li>
+
+            <li class="li-item">
+              <a href="http://baidu.com">
+                <img class="no-lazy" src="/medias/bli4.jpg">
+              </a>
+            </li>
+
+            <li class="li-item">
+              <a href="http://baidu.com">
+                <img class="no-lazy" src="/medias/bli5.jpg">
+              </a>
+            </li>
+            
+                        <li class="li-item">
+              <a href="http://baidu.com">
+                <img class="no-lazy" src="/medias/bli6.jpg">
+              </a>
+            </li>
+            <!-- 在这里结束 -->
+          </ul>
+        </vue-seamless-scroll>
+      </div>
+
+      <script defer src="/bli/index.js"></script>
+      <link href="/bli/index.css" rel="stylesheet">'
+      
+      

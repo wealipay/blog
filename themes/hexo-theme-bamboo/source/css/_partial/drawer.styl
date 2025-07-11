@@ -3,6 +3,9 @@
     color: $color-inner;
     padding: 10px;
     cursor: pointer;
+    border-radius:4px;
+            background: linear-gradient(to right,#fff ,#fe2e48);
+    
   }
 
   .drawer-box_mask {
@@ -23,9 +26,10 @@
     width: 240px;
     height: 100%;
     z-index: 999;
-    background-color: #fff;
+    background: radial-gradient(80px 200px at left bottom,#fe2e48,transparent),radial-gradient(80px 200px at right bottom,#fe2e48,transparent),linear-gradient(#5FAeFF 20%, #cfeaf5 80%);
     transition: left 0.3s;
-    overflow: auto;
+    overflow: auto;text-align:center;
+    
 
     &.active {
       left: 0;
@@ -34,6 +38,10 @@
     .drawer-box-head {
       padding: 20px 10px;
       color: #ffffff;
+      border-bottom:1px solid #fff;
+  border-radius: 0 0 20% 20% ; /* 上左、上右为半径值，下左、下右为0 */
+  background: radial-gradient(80px 100px,#fe2e48,transparent),linear-gradient(to top,#fe2e48, transparent 100px),linear-gradient(#476999, #cfeaf5 100%);
+
 
       .drawer-box-head_logo {
         width: 100px;
@@ -66,11 +74,18 @@
           a {
             color: #273849;
             display: block;
-            width: 100%;
+            width: 90%;
+            margin:0 auto;
             height: 100%;
             position: relative;
             box-sizing: border-box;
             padding: 10px 20px;
+            margin-top:5px;
+            border-radius:5px;
+            border-right:6px solid white;
+            border-left:6px solid #fe2e48;
+            
+            background: linear-gradient(white,transparent 20px),linear-gradient(to right,#fff 50px,#fe2e48 100%);
 
             .arrow {
               transition: all 0.3s;
@@ -81,7 +96,9 @@
             }
 
             &:hover {
-              background-color: rgba(0, 0, 0, 0.1);
+              background: linear-gradient(to left,#fff 50px,#fe2e48 100%,#aaaabb 50px),linear-gradient(white,transparent 20px);
+              border-right:6px solid #fe2e48;
+            border-left:6px solid white;
             }
           }
 

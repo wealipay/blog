@@ -76,7 +76,7 @@
               img = imgs[Math.abs(hashCode(post.title) % imgs.length)]
             %>
             <div class="post-img-box">
-              <a href="<%- url_for(post.path) %>" class="post-img " style="background-size: cover; 
+              <a href="<%- url_for(post.path) %>" class="post-img " style="background-size: contain; 
                 background-position: center center;">
                 <img class="lazyload" src="<%- url_for(post.img || post.swiperImg || img) %>" alt="">
               </a>

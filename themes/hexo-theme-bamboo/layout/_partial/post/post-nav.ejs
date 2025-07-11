@@ -25,7 +25,7 @@
     img = imgs[Math.abs(hashCode(page.prev.title) % imgs.length)]
   %>
   <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img" style="background-size: cover; 
+    <div class="post-nav-img" style="background-size: contain; 
       background-position: center center;">
       <img class="lazyload" src="<%- url_for(page.prev.img || page.prev.swiperImg || img) %>" alt="">
     </div>

@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 一起薅支付宝羊毛
-subtitle: ''
+title: 一起薅羊毛
+subtitle: '一起薅支付宝羊毛'
 description: '互帮互助，互利共赢'
 keywords: '薅羊毛'
 author: wealipay
@@ -13,9 +13,9 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://blog.wealipay.top/
+url: https://wealipay.top
 root: /
-permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -94,10 +94,16 @@ include:
 exclude:
 ignore:
 
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: hexo-theme-bamboo
+
 search:
   path: search.xml
   field: post
-
+  
+  
 permalink_pinyin:
   enable: true
   separator: '-' # default: '-'
@@ -113,12 +119,13 @@ feed:
   order_by: -date
 
 
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: hexo-theme-bamboo
-
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# abbrlink config
+abbrlink:
+  alg: crc32      # Algorithm used to calc abbrlink. Support crc16(default) and crc32
+  rep: hex        # Representation of abbrlink in URLs. Support dec(default) and hex
+  
