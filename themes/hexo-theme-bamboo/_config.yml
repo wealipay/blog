@@ -443,7 +443,7 @@ valine:
 # https://twikoo.js.org
 twikoo:
   on: true
-  envId: 'https://api.wealipay.top' # 环境 ID，搭建教程：https://twikoo.js.org/backend.html
+  envId: 'https://api.wealipay.top/' # 环境 ID，搭建教程：https://twikoo.js.org/backend.html
   lightGallery: false # 评论图片点击放大，注意启用了这个放大功能，就不要在twikoo的管理面板里面启用 '插件->使用简易图片点击放大效果', 否则会有两个放大效果
   js: https://cdn.bootcdn.net/ajax/libs/twikoo/1.6.31/twikoo.all.min.js
   # region: ap-guangzhou # 环境地域，默认为 ap-shanghai
