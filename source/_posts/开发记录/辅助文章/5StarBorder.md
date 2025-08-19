@@ -1,0 +1,89 @@
+---
+date: 2025-08-19 22:59
+abbrlink: 'starborder'
+categories: 开发记录
+tags: wealipay全栈
+title: 5StarBorder组件使用
+excerpt: StarBorder组件使用
+---
+
+{% folding, StarBorder组件定义： %}
+```ts
+import React from "react";
+
+type StarBorderProps<T extends React.ElementType> =
+  React.ComponentPropsWithoutRef<T> & {
+    as?: T;
+    className?: string;
+    children?: React.ReactNode;
+    color?: string;
+    speed?: React.CSSProperties['animationDuration'];
+    thickness?: number;
+  }
+
+const StarBorder = <T extends React.ElementType = "button">({
+  as,
+  className = "",
+  color = "white",
+  speed = "6s",
+  thickness = 1,
+  children,
+  ...rest
+}: StarBorderProps<T>) => {
+  const Component = as || "button";
+
+  return (
+    <Component 
+      className={`relative inline-block overflow-hidden rounded-[20px] ${className}`} 
+      {...(rest as any)}
+      style={{
+        padding: `${thickness}px 0`,
+        ...(rest as any).style,
+      }}
+    >
+      <div
+        className="absolute w-[300%] h-[50%] opacity-70 bottom-[-11px] right-[-250%] rounded-full animate-star-movement-bottom z-0"
+        style={{
+          background: `radial-gradient(circle, ${color}, transparent 10%)`,
+          animationDuration: speed,
+        }}
+      ></div>
+      <div
+        className="absolute w-[300%] h-[50%] opacity-70 top-[-10px] left-[-250%] rounded-full animate-star-movement-top z-0"
+        style={{
+          background: `radial-gradient(circle, ${color}, transparent 10%)`,
+          animationDuration: speed,
+        }}
+      ></div>
+      <div className="relative z-1 bg-gradient-to-b from-black to-gray-900 border border-gray-800 text-white text-center text-[16px] py-[16px] px-[26px] rounded-[20px]">
+        {children}
+      </div>
+    </Component>
+  );
+};
+
+export default StarBorder;
+
+```
+{% endfolding %}
+<hr>
+{% folding, StarBorder组件使用： %}
+```ts
+/app/page.tsx
+import StarBorder from "./components/reactbits/StarBorder";
+  <StarBorder
+    as="div"
+    className="absolute left-1/2 transform -translate-x-1/2 -translate-y-10 w-5/6"
+    color="red"
+    speed="4s"
+    >
+      <div className="text-2xl h-16 flex justify-around items-center">
+        <Image width={50} height={50} src={hao} alt="" />
+        <Link href="/product" className="">
+          红包列表
+        </Link>
+      </div>
+  </StarBorder>
+```
+{% endfolding %}
+<hr />

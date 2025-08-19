@@ -18,11 +18,3 @@ const eslintConfig = [
 ```
 {% endfolding %}
 <hr>
-{% folding, ： %}
-
-{% endfolding %}
-<hr>
-{% folding, ： %}
-
-{% endfolding %}
-<hr>
