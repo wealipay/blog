@@ -87,3 +87,34 @@ import StarBorder from "./components/reactbits/StarBorder";
 ```
 {% endfolding %}
 <hr />
+{% folding, keyframes： %}
+```ts
+@keyframes star-movement-bottom {
+  0% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-100%, 0%);
+    opacity: 0;
+  }
+}
+@keyframes star-movement-top {
+  0% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(100%, 0%);
+    opacity: 0;
+  }
+}
+.animate-star-movement-bottom {
+  animation: star-movement-bottom linear infinite alternate;
+}
+.animate-star-movement-top {
+  animation: star-movement-top linear infinite alternate;
+}
+
+```
+{% endfolding %}
