@@ -2,7 +2,7 @@
 date: 2025-08-17 20:44 
 abbrlink: 'lightrays'
 categories: 开发记录
-tags: wealipay全栈
+tags: 辅助文章
 title: 4LightRays组件的使用
 ---
 

@@ -2,7 +2,7 @@
 date: 2025-08-19 23:13
 abbrlink: 'gradienttext'
 categories: 开发记录
-tags: wealipay全栈
+tags: 辅助文章
 title: 6GradientText组件使用
 excerpt: GradientText组件使用
 ---

@@ -2,7 +2,7 @@
 date: 2025-08-16 08:09 
 abbrlink: 'any'
 categories: 开发记录
-tags: nextjs
+tags: 辅助文章
 title: 3解决any类型错误的问题
 ---
 {% folding, eslint.config.mjs： %}

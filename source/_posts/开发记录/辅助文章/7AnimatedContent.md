@@ -2,7 +2,7 @@
 date: 2025-08-21 17:58
 abbrlink: 'animatedcontent'
 categories: 开发记录
-tags: wealipay全栈
+tags: 辅助文章
 title: 7AnimatedContent组件使用
 expert: AnimatedContent组件
 ---

@@ -2,7 +2,7 @@
 date: 2025-08-19 22:59
 abbrlink: 'starborder'
 categories: 开发记录
-tags: wealipay全栈
+tags: 辅助文章
 title: 5StarBorder组件使用
 excerpt: StarBorder组件使用
 ---
