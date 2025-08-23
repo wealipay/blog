@@ -75,19 +75,15 @@ export default function GradientText({
 <hr>
 {% folding, GradientText组件的使用： %}
 ```ts
+import GradientText from './GradientText'
+  
 <GradientText
-  colors={["red", "#4079ff", "white", "#4079ff", "red"]}
+  colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
   animationSpeed={3}
   showBorder={false}
-  className="absolute font-bold text-center animate-gradient  top-10 transform translate-x-1/2 text-2xl"
-  >
-    在支付宝首页搜索
-    <br />
-    <br />
-    853688884
-    <br />
-    <br />
-    即可领红包
+  className="custom-class"
+>
+  Add a splash of color!
 </GradientText>
 ```
 {% endfolding %}

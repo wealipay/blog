@@ -70,20 +70,16 @@ export default StarBorder;
 {% folding, StarBorder组件使用： %}
 ```ts
 /app/page.tsx
-import StarBorder from "./components/reactbits/StarBorder";
-  <StarBorder
-    as="div"
-    className="absolute left-1/2 transform -translate-x-1/2 -translate-y-10 w-5/6"
-    color="red"
-    speed="4s"
-    >
-      <div className="text-2xl h-16 flex justify-around items-center">
-        <Image width={50} height={50} src={hao} alt="" />
-        <Link href="/product" className="">
-          红包列表
-        </Link>
-      </div>
-  </StarBorder>
+import StarBorder from './StarBorder'
+  
+<StarBorder
+  as="button"
+  className="custom-class"
+  color="cyan"
+  speed="5s"
+>
+  // content
+</StarBorder>
 ```
 {% endfolding %}
 <hr />
