@@ -2,7 +2,7 @@
 date: 2025-08-25 14:53
 abbrlink: 'gooeynav'
 categories: 开发记录
-tags: wealipay全栈
+tags: 辅助文章
 title: 10GooeyNav组件使用
 excerpt: 导航组件
 ---
