@@ -396,7 +396,7 @@ export default function TabNav() {
 }
 
 ```
-Next.js 的  <Link>  组件会通过客户端路由跳转（类似单页应用），不会刷新页面，因此组件状态会被保留。
+Next.js 的 \<Link> 组件会通过客户端路由跳转（类似单页应用），不会刷新页面，因此组件状态会被保留。
 {% endfolding %}
 <hr>
 {% folding, ： %}
