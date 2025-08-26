@@ -4,6 +4,7 @@ abbrlink: 'gooeynav'
 categories: 开发记录
 tags: wealipay全栈
 title: 10GooeyNav组件使用
+expert: 导航组件
 ---
 {% folding, GooeyNav定义： %}
 ```ts

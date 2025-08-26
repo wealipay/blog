@@ -4,6 +4,7 @@ abbrlink: 'tabnav'
 categories: 开发记录
 tags: wealipay全栈
 title: 3TabNav组件开发
+expert: TabNav组件开发
 ---
 {% folding, GooeyNav组件的定义： %}
 ```ts
