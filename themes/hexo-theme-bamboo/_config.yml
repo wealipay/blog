@@ -352,8 +352,8 @@ copyright:
 # 首页座右铭
 motto:
   on: true
-  title: '一起薅羊毛'
-  content: '经常分享支付宝薅羊毛的活动，包括扫码领红包，淘宝618，淘宝双11等活动，互帮互助，才能互利共赢！_https://wealipay.top'
+  title: '最强大脑'
+  content: '记录学习，才能温故知新！'
   background: 'radial-gradient(10% 50% at left top,#fe2e48,transparent),radial-gradient(10% 50% at left bottom,#fe2e48,transparent),linear-gradient(to right,white,#fe2e48);' # url("xxx") or red or #000 or rgba() ..
 
 # 首页公告

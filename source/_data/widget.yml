@@ -1,6 +1,6 @@
 
 # home_widget里面的内容会出现在座右铭那一个栏目里面
-home_widget:
+# home_widget:
   - class_name: mybilibili
     id_name: mybilibili
     order: -1
