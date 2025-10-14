@@ -5,30 +5,13 @@ menu:
    Home:
      url: /
      icon: fas fa-home
-   搜索码领红包: # 这是二级菜单的写法
+   Blender教程: # 这是二级菜单的写法
     icon: fas fa-link
     children:
      - name: 7月领红包
        url: https://wealipay.top/posts/202507.html
        icon: fas fa-sack-dollar
-     - name: 6月领红包
-       url: https://wealipay.top/posts/202506.html
-       icon: fas fa-sack-dollar
-     - name: 5月领红包
-       url: https://wealipay.top/posts/202505.html
-       icon: fas fa-sack-dollar
-     - name: 4月领红包
-       url: https://wealipay.top/posts/202504.html
-       icon: fas fa-sack-dollar
-     - name: 3月领红包
-       url: https://wealipay.top/posts/202503.html
-       icon: fas fa-sack-dollar
-     - name: 2月领红包
-       url: https://wealipay.top/posts/202502.html
-       icon: fas fa-sack-dollar
-     - name: 1月领红包
-       url: https://wealipay.top/posts/202501.html
-       icon: fas fa-sack-dollar
+
 
    Archives:
      url: /archives
@@ -63,8 +46,8 @@ sidebar:
       avatar: /medias/logo.png
       shape: rectangle # circle, rectangle
       url: /about/
-      title: 一起薅羊毛
-      subtitle: 打开支付宝搜索853688884即可领红包,互帮互助才能互利共赢
+      title: 最强大脑
+      subtitle: 记录学习，温故知新
 #      jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
       fontFammily: Titillium Web,'PingFang SC','Hiragino Sans GB','Microsoft JhengHei','Microsoft YaHei',sans-serif
       background: 'linear-gradient(to right,white,#fe2e48);'
@@ -208,8 +191,8 @@ swiper:
   defaultImg: '/medias/default.jpg' # 图片，没有则随机选取
   defaultVideo: '' # video，min-width:992px show
   defaultVideoLoadingImg: 'https://img14.360buyimg.com/ddimg/jfs/t1/175057/18/19582/882056/60ee7ac8Ef0045710/202d2ad878684a3b.gif' # video loading img -- use .gif img, 视频预加载动画，使用gif图片作为loading，为空则视频没有预加载动画
-  defaultTile: '一起薅羊毛' # 标题
-  defaultDesc: [打开支付宝，搜索853688884即可领红包] #描 述，例如 ['煮酒洗净尘嚣，论知交', '万般付之一笑，共偕老']
+  defaultTile: '记录学习' # 标题
+  defaultDesc: [温故知新] #描 述，例如 ['煮酒洗净尘嚣，论知交', '万般付之一笑，共偕老']
   defaultLeftBtnText: '互帮互助' # 左边按钮文字, 空字符串则不显示
   defaultLeftBtnLink: '' # 左边按钮链接 
   defaultRightBtnText: '互利共赢' # 右边按钮的文字，空字符串则不显示
