@@ -4,9 +4,12 @@ abbrlink: "searchbar"
 categories: Blender网站源码
 tags: Nextjs
 title: SearchBar.tsx文件
+excerpt: SearchBar代码
+
 ---
 
 {% folding 01-04新增代码: %}
+
 ```ts
 import { Search } from "lucide-react";
 const SearchBar = () => {
@@ -27,4 +30,5 @@ export default SearchBar;
 }
 
 ```
+
 {% endfolding %}
