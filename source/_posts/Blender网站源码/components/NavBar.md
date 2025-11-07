@@ -5,7 +5,6 @@ categories: Blender网站源码
 tags: Nextjs
 title: NavBar.tsx文件
 excerpt: NavBar代码
-
 ---
 
 {% folding 01-04新增代码: %}
@@ -43,6 +42,20 @@ const NavBar = () => {
   );
 };
 export default NavBar;
+
+```
+
+{% endfolding %}
+
+{% folding 05-08新增代码: %}
+
+```ts
+import { Home, Bell, ShoppingCart } from "lucide-react";
+<div className="flex items-center gap-6">
+  <Bell className="w-4 h-4 text-gray-600" />
+  <ShoppingCart className="w-4 h-4 text-gray-600" />
+  <Link href="/login">登陆</Link>
+</div>
 
 ```
 
