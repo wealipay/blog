@@ -1,6 +1,6 @@
 ---
 date: 2025-11-01 20:10
-abbrlink: "layout"
+abbrlink: "footer"
 categories: Blender网站源码
 tags: Nextjs
 title: Footer.tsx文件
