@@ -5,8 +5,6 @@ categories: Blender网站源码
 tags: Nextjs
 title: Footer.tsx文件
 excerpt: Footer代码
-toc: false
-
 ---
 
 {% folding 05-08新增代码: %}
