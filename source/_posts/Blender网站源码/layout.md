@@ -26,15 +26,11 @@ import NavBar from "@/components/NavBar";
 - p-4 是 Tailwind CSS 的内边距类，意思是给元素的四个方向（上、右、下、左）都设置相等的内边距，其中  4  对应 Tailwind 的间距单位（默认 1 单位 = 0.25rem，所以  p-4  即 1rem，也就是 16px）。
   {% folding 配置@: %}
 
-```
 //配置@别名：
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./app/*"]
-    }
-```
-
-{% endfolding %}
+"baseUrl": ".",
+"paths": {
+"@/_": ["./app/_"]
+}
 
 <hr/>
 - sm:max-w-xl 是 Tailwind CSS 的响应式类，意思是当屏幕宽度达到  sm （小屏幕，默认断点为 640px）及以上时，元素的最大宽度被限制为  xl  对应的尺寸（默认是 36rem，即 576px）。简单说就是“小屏幕起，元素最大宽固定为 576px”，能防止宽屏时元素过宽影响阅读
