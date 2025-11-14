@@ -1,5 +1,5 @@
 ---
-date: 2025-11-01 10:57
+date: 2025-11-01 10:56
 abbrlink: "layout"
 categories: Blender网站源码
 tags: Nextjs
@@ -27,6 +27,7 @@ import NavBar from "@/components/NavBar";
   {% folding 配置@: %}
 
 ```
+//配置@别名：
     "baseUrl": ".",
     "paths": {
       "@/*": ["./app/*"]
