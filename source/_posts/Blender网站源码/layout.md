@@ -28,11 +28,13 @@ import NavBar from "@/components/NavBar";
 - md:max-w-2xl：屏幕宽度达到  md  断点（默认768px）及以上时，元素最大宽度为  2xl （默认42rem，即672px）。
 - lg:max-w-3xl：屏幕宽度达到  lg  断点（默认1024px）及以上时，元素最大宽度为  3xl （默认48rem，即768px）。
 - xl:max-w-6xl：屏幕宽度达到  xl  断点（默认1280px）及以上时，元素最大宽度为  6xl （默认72rem，即1152px）。
+
 ```ts
-//配置@别名：
+//tsconfig.json配置@别名：
 "baseUrl": ".",
 "paths": {
-"@/_": ["./app/_"]
+"@/*": ["./app/*"]
 }
 ```
+
 {% endfolding %}
