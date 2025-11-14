@@ -21,6 +21,7 @@
     "hexo-generator-index": "^4.0.0",
     "hexo-generator-search": "^2.4.3",
     "hexo-generator-tag": "^2.0.0",
+    "hexo-hide-posts": "^0.4.3",
     "hexo-permalink-pinyin": "^1.1.0",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-marked": "^7.0.0",
@@ -28,8 +29,5 @@
     "hexo-server": "^3.0.0",
     "hexo-theme-landscape": "^1.0.0",
     "hexo-wordcount": "^6.0.1"
-  },
-  "devDependencies": {
-    "hexo-hide-posts": "^0.4.3"
   }
 }
