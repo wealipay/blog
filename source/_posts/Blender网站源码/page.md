@@ -28,7 +28,7 @@ export default function Home() {
 
 ```
 
-{% note, 轮播图 %}
+{% note, 轮播图： %}
 
 - 父容器需显式声明  position: relative （或其他定位），否则  fill  会让图片以  absolute  定位全屏覆盖页面。
   典型使用场景:
