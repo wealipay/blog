@@ -8,6 +8,7 @@ hidden: true
 ---
 
 {% folding 05-08:%}
+
 ```ts
 import ProductCard from "./ProductCard";
 import Categories from "./Categories";
@@ -139,4 +140,10 @@ export default ProductList;
 
 ```
 
-{% endfolding %}
+- ProductList组件定义了products的商品数组，该数组受ProductsType的约定，所以需要进行类型约定，
+- products ：是存放产品数据的数组（比如 [{id:1, name:"手机"}, {id:2, name:"电脑"}]）。
+- map() ：数组方法，遍历  products  里的每个元素，对每个元素执行后面的函数，最后返回新数组。
+- product => (...) ：遍历的回调函数，每个  product  就是数组里的单个产品数据。
+- <ProductCard key={product.id} product={product} /> ：为每个产品数据渲染一个  ProductCard  组件； key  是 React 列表渲染的必填属性（用唯一的  product.id  避免渲染错误）， product={product}  是给组件传递产品数据 props，让组件能显示该产品的信息。
+- 简单说：把产品数据数组，逐个转换成产品卡片组件，最终渲染出一排产品卡片。
+  {% endfolding %}

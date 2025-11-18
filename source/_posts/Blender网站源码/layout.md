@@ -28,7 +28,9 @@ import NavBar from "@/components/NavBar";
 - md:max-w-2xl：屏幕宽度达到  md  断点（默认768px）及以上时，元素最大宽度为  2xl （默认42rem，即672px）。
 - lg:max-w-3xl：屏幕宽度达到  lg  断点（默认1024px）及以上时，元素最大宽度为  3xl （默认48rem，即768px）。
 - xl:max-w-6xl：屏幕宽度达到  xl  断点（默认1280px）及以上时，元素最大宽度为  6xl （默认72rem，即1152px）。
-
+- tailwindcss默认分为五个断点，是针对屏幕的，sm,md,lg,xl,2xl
+- 默认在所有屏幕（包括 <640px 小屏）生效，后续断点样式（如  md:text-2xl ）会在对应尺寸下覆盖基础样式。
+- 控制元素宽度的类分为，max-w-xs,max-w-sm,max-w-md,max-w-lg,max-w-xl,max-w-2xl,一直到7xl,max-w-full
 ```ts
 //tsconfig.json配置@别名：
 "baseUrl": ".",
