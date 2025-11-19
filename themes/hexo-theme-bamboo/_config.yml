@@ -5,12 +5,12 @@ menu:
    Home:
      url: /
      icon: fas fa-home
-   Blender教程: # 这是二级菜单的写法
+   Nextjs教程: # 这是二级菜单的写法
     icon: fas fa-link
     children:
-     - name: 7月领红包
-       url: https://wealipay.top/posts/202507.html
-       icon: fas fa-sack-dollar
+     - name: 流程图
+       url: /tags/nextjs
+       icon: fas fa-link
 
 
    Archives:
