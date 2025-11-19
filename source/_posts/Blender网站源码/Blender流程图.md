@@ -1,6 +1,6 @@
 ---
 date: 2025-11-13 22:28
-abbrlink: "mermaid"
+abbrlink: "mermaide"
 categories: nextjs教程
 tags: nextjs
 title: Blender网站流程图

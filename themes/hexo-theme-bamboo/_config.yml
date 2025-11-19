@@ -9,7 +9,7 @@ menu:
     icon: fas fa-link
     children:
      - name: 流程图
-       url: /tags/nextjs
+       url: /post/mermaid.html
        icon: fas fa-link
 
 
