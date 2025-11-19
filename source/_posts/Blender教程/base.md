@@ -1,6 +1,6 @@
 ---
 date: 2025-11-14 20:53
-abbrlink: "base"
+abbrlink: "copy"
 categories: Nextjs教程
 tags: nextjs
 title:
