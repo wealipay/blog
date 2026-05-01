@@ -5,12 +5,12 @@ menu:
    Home:
      url: /
      icon: fas fa-home
-   Nextjs教程: # 这是二级菜单的写法
-    icon: fas fa-link
-    children:
-     - name: 流程图
-       url: /posts/mermaid.html
-       icon: fas fa-link
+   # Nextjs教程: # 这是二级菜单的写法
+   # icon: fas fa-link
+   # children:
+   #  - name: 流程图
+   #    url: /posts/mermaid.html
+   #    icon: fas fa-link
 
 
    Archives:
@@ -46,8 +46,8 @@ sidebar:
       avatar: /medias/logo.png
       shape: rectangle # circle, rectangle
       url: /about/
-      title: 最强大脑
-      subtitle: 记录学习，温故知新
+      title: 好好记性不如烂笔头
+      subtitle: 记录学习，才能温故知新
 #      jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
       fontFammily: Titillium Web,'PingFang SC','Hiragino Sans GB','Microsoft JhengHei','Microsoft YaHei',sans-serif
       background: 'linear-gradient(to right,white,#fe2e48);'
@@ -142,7 +142,7 @@ sidebar:
           unit: '篇'
         runtime:
           on: true
-          data: '2025/06/28'    # 填写建站日期
+          data: '2026/5/1'    # 填写建站日期
           text: '已运行时间：'
           unit: '天'
         wordcount:
@@ -175,8 +175,8 @@ swiper:
   on: true # 设置为false, 则首页不显示轮播图
   # 当在.md文件中，设置swiper:true，会将该文章放到轮播中，
   showPrevNext: true # 是否显示左右切换按钮
-  showIndicators: false  # 是否显示指示器
-  autoplay: false # 是否自动轮播
+  showIndicators: true  # 是否显示指示器
+  autoplay: true # 是否自动轮播
   loop: true # 让轮播看起来是循环的, 例如false的话，到达最后一个轮播图的时候，右按钮不能点击
   delay: 5000 # 切换延迟时间
   effect: 'slide' # 'fade': 淡入淡出效果
@@ -191,11 +191,11 @@ swiper:
   defaultImg: '' # 图片，没有则随机选取
   defaultVideo: '' # video，min-width:992px show
   defaultVideoLoadingImg: 'https://img14.360buyimg.com/ddimg/jfs/t1/175057/18/19582/882056/60ee7ac8Ef0045710/202d2ad878684a3b.gif' # video loading img -- use .gif img, 视频预加载动画，使用gif图片作为loading，为空则视频没有预加载动画
-  defaultTile: '记录学习' # 标题
-  defaultDesc: [温故知新] #描 述，例如 ['煮酒洗净尘嚣，论知交', '万般付之一笑，共偕老']
-  defaultLeftBtnText: '互帮互助' # 左边按钮文字, 空字符串则不显示
+  defaultTile: 'Wealipay人生' # 标题
+  defaultDesc: [纵使颠沛流离，依旧心之所向！] #描 述，例如 ['煮酒洗净尘嚣，论知交', '万般付之一笑，共偕老']
+  defaultLeftBtnText: '记录学习' # 左边按钮文字, 空字符串则不显示
   defaultLeftBtnLink: '' # 左边按钮链接 
-  defaultRightBtnText: '互利共赢' # 右边按钮的文字，空字符串则不显示
+  defaultRightBtnText: '温故知新' # 右边按钮的文字，空字符串则不显示
   defaultRightBtnLink: '' # 右边的按钮的链接
   defaultDescTyped: true # defaultDesc文字是否开启打字特效  is typed
   defaultDescTypedSpeed: 100 # defaultDesc 打字速度, typed typeSpeed
@@ -289,7 +289,7 @@ snow:
 
 # 首页花瓣飘落效果--春天
 sakura:
-  on: false
+  on: true
   onlyPc: false # 设为true，只有pc端显示花瓣特效
 
 # 首页文章图片是否一左一右交错显示
@@ -352,8 +352,8 @@ copyright:
 # 首页座右铭
 motto:
   on: true
-  title: '最强大脑'
-  content: '记录学习，才能温故知新！'
+  title: 'Nextjs16学习笔记'
+  content: 'Next.js16 Tailwind4 Prisma Postgresql '
   background: 'radial-gradient(10% 50% at left top,#fe2e48,transparent),radial-gradient(10% 50% at left bottom,#fe2e48,transparent),linear-gradient(to right,white,#fe2e48);' # url("xxx") or red or #000 or rgba() ..
 
 # 首页公告
@@ -363,14 +363,14 @@ notice:
   title: '最新通知'
   background: 'linear-gradient(to right,white,#fe2e48);' # url("xxx") or red or #000 or rgba() ..
   list: # list相当于数组对象，[{title:'xx',date: 'xx', url: 'xxx', color: 'red'}]根据自己实际情况，增加或者删除
-     - title: '博客更新到2.0了'
-       date: '2021-04-28'
-       url: '/archives'   # 可以为空, 也可以是本地页面地址如 '/archives'
+     - title: '博客正式上线'
+       date: '2026-05-01'
+       url: ''   # 可以为空, 也可以是本地页面地址如 '/archives'
        color: #42b983   # 字体颜色
-     - title: '一起薅羊毛网站正式上线'
-       date: '2025-06-28'
+    # - title: '一起薅羊毛网站正式上线'
+    #   date: '2025-06-28'
     #   url: 'http://baidu.com'
-       color: #42b983
+    #   color: #42b983
     # - title: '#新增 支持二级导航'
     #   date: '2021-04-28'
     #   url: 'http://baidu.com'
@@ -639,7 +639,7 @@ site_footer:
     #   url: https://github.com/yuang01/hexo-theme-bamboo
     # - icon: fas fa-qq
     #   url: tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541
-  copyright: 'Copyright © 2025<a href="https://wealipay.top">Wealipay</a>'
+  copyright: 'Copyright © 2026<a href="https://wealipay.top">Wealipay</a>'
   custom: # 根据需要自行取消注释，label: 'markdown格式'，会在下面继续增加内容
     # - label: '<br>'
     # - label: '[Hello World](http://baidu.com)'

@@ -143,7 +143,7 @@
                   <% if (theme.swiper.defaultDescTyped && theme.swiper.defaultDesc && theme.swiper.defaultDesc.length > 0) { %>
                     <div class="ani animated default-excerpt" swiper-animate-effect="<%= theme.swiper.textAnimated %>" swiper-animate-duration="<%= theme.swiper.textDuration %>" swiper-animate-delay="<%= theme.swiper.textDelay %>">
                       <vue-typed-js :strings="defaultDesc" :loop="defaultDescTypedLoop" :type-speed="<%- theme.swiper.defaultDescTypedSpeed %>" :back-speed="<%- theme.swiper.defaultDescTypedBackSpeed %>">
-                        <h1 class="typing"></h1>
+                        <h1 style="font-size:16px;" class="typing"></h1>
                       </vue-typed-js>
                     </div>
                     <% } else {  %>
