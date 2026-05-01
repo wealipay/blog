@@ -1,5 +1,6 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags:
+categories: Next.js16教程
+tags: next.js16
 ---

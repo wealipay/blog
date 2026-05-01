@@ -46,7 +46,7 @@ sidebar:
       avatar: /medias/logo.png
       shape: rectangle # circle, rectangle
       url: /about/
-      title: 好好记性不如烂笔头
+      title: 好记性不如烂笔头
       subtitle: 记录学习，才能温故知新
 #      jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
       fontFammily: Titillium Web,'PingFang SC','Hiragino Sans GB','Microsoft JhengHei','Microsoft YaHei',sans-serif
