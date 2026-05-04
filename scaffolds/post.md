@@ -1,5 +1,6 @@
 ---
 title: {{ title }}
+abbrlink: ""
 date: {{ date }}
 swiper: false
 swiperImg: ""
