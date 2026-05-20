@@ -25,17 +25,50 @@ swiperDesc:
 
 {% folding Metadata: %}
 ```ts
-import { siteConfig } from "../siteConfig";
+import type { Metadata } from "next";
+import { siteConfig } from "../siteConfig"; //网站全局配置文件
 
 export const metadata: Metadata = {
-	title: siteConfig.title,
+	title: {
+		default: siteConfig.title,
+		template: `%s | ${siteConfig.title}`
+	},
+	keywords: siteConfig.keywords,
+	authors: siteConfig.authors,
+	viewport:
+		"width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no",
 	description: siteConfig.desc,
 	icons: {
 		icon: siteConfig.faviconUrl,
 		apple: siteConfig.faviconUrl
-	}
+	},
+	alternates: {
+		canonical: "https://wealipay.top/"
+	},
+	robots: {
+		index: true,
+		follow: true,
+		googleBot: {
+			index: true,
+			follow: true
+		}
+	},
+	locale: "zh-CN"
 };
 ```
+
+
+```ts
+//siteConfig.ts
+export const siteConfig = {
+	title: "wealipay",
+	desc: "记录学习Nextjs16历程",
+	keywords: ["wealipay", "Next.js16", "Tailwind V4"],
+	authors: [{ name: "wealipay" }],
+	faviconUrl: "./favicon.ico"
+};
+```
+
 
 - 作用：从 Next.js 中导入 Metadata 类型（用于定义页面的 SEO 元数据，如标题、描述等）。
 - 注意：import type 表示仅导入类型（TypeScript 特性），不会增加运行时的体积
@@ -48,20 +81,13 @@ export const metadata: Metadata = {
 ```ts
 import { Ma_Shan_Zheng } from "next/font/google";
   const maShan = Ma_Shan_Zheng({
-	weight: ["400", "700", "900"],
-	subsets: ["latin", "chinese"],
+	weight: ["400"],
+	subsets: ["latin"],
 	display: "swap",
 	variable: "--font-mashan",
 	preload: true
 });
 ```
-### Next.js 中控制字体加载的核心配置
-#### weight: ["400", "700", "900"]：
-- 400：常规
-- 700：加粗
-- 900：特粗
-
-<hr/>
 
 ####  subsets: ["latin"]： 
 - 只加载拉丁字母字符集（英文、数字），减小字体文件体积。 
@@ -94,7 +120,7 @@ font-family: var(--font-mashan);
 {% folding 使用字体: %}
 
 ```ts
-<html lang='zh-CN' className={`${maShan.className} h-full antialiased`} suppressHydrationWarning>
+<html lang='zh-CN' className={`${maShan.className}  antialiased`} suppressHydrationWarning>
 </html>
 ```
 + JSX 里 { }：插 JS 变量/代码
@@ -111,6 +137,15 @@ font-family: var(--font-mashan);
 
 <hr/>
 
+#### antialiased：
++ 抗锯齿；平滑边缘
+
+<hr/>
+
+#### suppressHydrationWarning：
++ 前后端内容不一致抑制水合警告
+
+<hr/>
 
 {% folding 为什么必须这样用: %}
 ##### 性能优化：
@@ -135,4 +170,65 @@ typescript: {
 ```
 {% endfolding %}
 
+{% endfolding %}
+
+{% folding 2026-05-20完整代码: %}
+```tsx
+import type { Metadata } from "next";
+import { Ma_Shan_Zheng } from "next/font/google";
+import "./globals.css";
+import { siteConfig } from "../siteConfig";
+
+const maShan = Ma_Shan_Zheng({
+	weight: ["400"],
+	subsets: ["latin"],
+	display: "swap",
+	variable: "--font-mashan",
+	preload: true
+});
+
+export const metadata: Metadata = {
+	title: {
+		default: siteConfig.title,
+		template: `%s | ${siteConfig.title}`
+	},
+	keywords: siteConfig.keywords,
+	authors: siteConfig.authors,
+	viewport:
+		"width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no",
+	description: siteConfig.desc,
+	icons: {
+		icon: siteConfig.faviconUrl,
+		apple: siteConfig.faviconUrl
+	},
+	alternates: {
+		canonical: "https://wealipay.top/"
+	},
+	robots: {
+		index: true,
+		follow: true,
+		googleBot: {
+			index: true,
+			follow: true
+		}
+	},
+	locale: "zh-CN"
+};
+
+export default function RootLayout({
+	children
+}: Readonly<{
+	children: React.ReactNode;
+}>) {
+	return (
+		<html
+			lang='zh-CN'
+			className={`${maShan.className} antialiased`}
+			suppressHydrationWarning>
+			<body>{children}</body>
+		</html>
+	);
+}
+
+```
 {% endfolding %}
