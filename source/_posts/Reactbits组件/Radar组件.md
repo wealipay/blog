@@ -23,11 +23,6 @@ date: 2026-05-12 10:49:02
 swiperDesc:
 ---
 
-{% folding 全局安装jsrepo: %}
-```
-npm i -g jsrepo
-```
-{% endfolding %}
 
 {% folding Radar组件安装: %}
 
