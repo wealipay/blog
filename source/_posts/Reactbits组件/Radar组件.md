@@ -17,7 +17,7 @@ bgImg: ''
 bgImgTransition: translate-fade
 bgImgDelay: 180000
 categories: Next.js16项目搭建
-tags: next.js16 reactbats
+tags: reactbits
 imgTop: true
 date: 2026-05-12 10:49:02
 swiperDesc:
