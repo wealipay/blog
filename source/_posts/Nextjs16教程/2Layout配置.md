@@ -35,13 +35,17 @@ export const metadata: Metadata = {
 	},
 	keywords: siteConfig.keywords,
 	authors: siteConfig.authors,
-	viewport:
-		"width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no",
 	description: siteConfig.desc,
 	icons: {
 		icon: siteConfig.faviconUrl,
 		apple: siteConfig.faviconUrl
 	},
+	export const viewport = {
+	width: "device-width",
+	initialScale: 1,
+	maximumScale: 1,
+	userscalable: false
+};
 	alternates: {
 		canonical: "https://wealipay.top/"
 	},
