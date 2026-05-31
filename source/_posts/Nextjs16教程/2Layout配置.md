@@ -236,3 +236,188 @@ export default function RootLayout({
 
 ```
 {% endfolding %}
+
+{% folding useState: %}
++ useState 是React/NextJs 内置钩子函数
++ 作用：定义页面变量、保存数据、实现页面动态更新
++ 普通变量改了页面不会刷新，useState定义的变量修改，页面立刻自动刷新
+```
+const [变量名, 修改变量的方法] = useState(默认值)
+
+import { useState } from 'react'
+
+export default function Home(){
+    // 定义count 默认值0
+    const [count,setCount] = useState(0)
+
+    return(
+        <div>
+            当前数字：{count}
+            <button onClick={()=>setCount(count+1)}>加1</button>
+        </div>
+    )
+}
+
+```
+
+#### 常用类型
+```ts
+//数字
+const [num,setNum] = useState(0)
+//字符串
+const [text,setText] = useState('')
+//布尔值 开关
+const [open,setOpen] = useState(false)
+//数组
+const [list,setList] = useState([])
+
+```
+
+{% endfolding %}
+
+{% folding useEffect: %}
++ useEffect 是 React 副作用钩子，用来处理函数组件副作用
++ 副作用：请求接口、定时器、监听事件、修改DOM、本地存储、页面挂载/销毁逻辑，全都放 useEffect
+```
+useEffect(回调函数, 依赖数组)
+```
+
+#### 依赖项为空数组 []
++ 组件只挂载执行一次，页面进来只跑一遍
++ 常用于：首次页面请求接口
+```ts
+useEffect(()=>{
+  console.log("组件挂载，只执行一次")
+},[])
+
+```
+
+#### 不写依赖数组（直接省略）
++ 组件每次渲染、数据一变就重复执行
+```ts
+useEffect(()=>{
+  console.log("每次渲染都执行")
+})
+
+```
+
+#### 传入指定依赖 [a,b]
++ 只有依赖变量发生变化，才会触发执行
+```ts
+useEffect(()=>{
+  console.log("count变了就执行")
+},[count])
+
+```
+
+#### 清除副作用（return 销毁函数）
++ 定时器、监听事件必须清除，防止内存泄漏
+```ts
+useEffect(()=>{
+    // 开启定时器
+    let timer = setInterval(()=>{},1000)
+
+    // 组件销毁 / 重新执行前 自动执行
+    return ()=>{
+        clearInterval(timer) //清除定时器
+    }
+},[])
+
+```
+
+#### 执行顺序
+ 
++ 组件渲染页面DOM
++ 再执行 useEffect
+
+#### 核心规则
+ 
+1 useEffect 异步执行，不会阻塞页面渲染
+
+2 依赖数组里面的值，只能放state、props
+
+3 依赖少写会报错、漏监听会数据不更新
+
+4 多个 useEffect 按代码顺序依次执行
+{% endfolding %}
+
+{% folding loading.tsx: %}
++ loading.js/loading.tsx 是一个特殊约定文件，用来在路由切换时自动显示“加载中”界面
++ 当访问  /dashboard ，且  page.tsx  里有异步数据请求时，自动先显示 loading，数据回来后替换成页面内容 。
+```tsx
+// app/blog/loading.tsx
+export default function Loading() {
+  return (
+    <div className="space-y-4 p-4 animate-pulse">
+      {/* 标题骨架 */}
+      <div className="h-8 w-1/2 bg-gray-200 rounded" />
+      {/* 内容骨架列表 */}
+      <div className="space-y-3">
+        {Array.from({ length: 3 }).map((_, i) => (
+          <div key={i} className="h-24 bg-gray-100 rounded" />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+```
+{% endfolding %}
+
+{% folding 配置别名@: %}
+```
+//tsconfig.json
+    "baseUrl":".",
+    "paths": {
+      "@/*": ["./app/*"]
+    }
+```
+{% endfolding %}
+
+#### Promise:
++ Promise 是JS专门用来处理【异步任务】的对象
++ 用来处理网络请求、文件读取、延时等待等操作
++ async、await 只能搭配Promise使用，不能单独用
++ 自带三种状态：
+ - pending 等待中
+ - resolve 成功
+ - reject 失败
++ async
+ - 放在函数前面，把普通函数强制变成Promise函数
+ - 不管你函数内部有没有return，返回值永远是Promise对象
++ await
+ - 只能等待Promise
+ - 作用：暂停代码、原地等待Promise执行完毕，拿到结果再往下走
+ - await不能等定时器、不能等普通变量，只等Promise
++ await 必须写在 async 函数里面，外面直接报错
++ async函数里面可以没有await，但await一定要有async
++ await后面必须是Promise对象
++ 所有网络请求axios、fetch，底层全部都是Promise
+```ts
+// 标准接口模拟模板 完整版
+const getData = async () => {
+    return new Promise( (resolve,reject) => {
+        setTimeout(() => {
+            let flag = true
+            if(flag){
+                resolve("请求成功，返回数据") //成功
+            }else{
+                reject("请求失败") //失败
+            }
+        }, 1000);
+    });
+};
+
+// 使用
+async function fn(){
+  try{
+    let res = await getData()
+    console.log(res)
+  }catch(err){
+    //捕获错误
+    console.log(err)
+  }
+}
+fn()
+
+```
