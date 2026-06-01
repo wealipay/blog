@@ -61,4 +61,25 @@ gap: 10px 20px;
  
     
 ```
+
+#### grid-template-areas 详解
++ grid-template-areas  是 CSS Grid 布局 用来给网格区域命名，直观划分页面布局，搭配  grid-area  使用。
++ 配套属性：grid-area
+ 给子元素绑定区域名：
+
+```ts
+.container {
+  display: grid;
+  /* 格式：每行写一组区域名，引号包裹，空格分隔 */
+  grid-template-areas:
+    "头部 头部"
+    "侧边 主体"
+    "底部 底部";
+  /* 配合行列尺寸 */
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 60px 1fr 50px;
+}
+
+```
+
 {% endfolding %}
