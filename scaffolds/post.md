@@ -18,7 +18,7 @@ donate: false
 bgImg: ""
 bgImgTransition: "translate-fade"
 bgImgDelay: 180000
-categories: Next.js16教程
-tags: next.js16
-imgTop: true
+categories: 义务教育
+tags: go
+imgTop: false
 ---
